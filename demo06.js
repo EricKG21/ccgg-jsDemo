@@ -65,11 +65,11 @@ Parent.prototype.sayHello = function(){}
 //p -> Parent.prototype -> Object.prototyoe -> null
 var p = new Parent();
 Child.prototype = p;
-//c -> child.prototype = p -> parent.prototype -. Object.prototype -> null
 
+//c -> child.prototype = p -> parent.prototype -. Object.prototype -> null
 var c = new Child();
 console.log(c.name)
-console.log
+console.log(c.sayHello());
 // c- > child.prototype 
 
 
